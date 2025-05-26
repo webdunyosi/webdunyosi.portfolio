@@ -66,3 +66,37 @@ body::before {
 .nav-link-underline:hover::after {
   width: 100%;
 }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: purple;
+  }
+}
+
+.blinking-cursor-text {
+  /* This class should be removed, but keeping it here for context if needed */
+  /* CSS rules for blinking-cursor-text */
+}
+
+#tech-enthusiast-typing {
+  overflow: hidden; /* Matnni boshida yashirish */
+  white-space: nowrap; /* Matnni bir qatorda tutish */
+  border-right: 0.15em solid transparent; /* Miltillovchi kursor, boshida shaffof */
+  /* Animatsiya tezligi va qadamlarini matnga moslash */
+  animation: typing 2s steps(18, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Add animation using JavaScript for dynamic text */
