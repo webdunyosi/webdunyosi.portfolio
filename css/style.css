@@ -27,3 +27,24 @@ body {
     background-position: 0% 50%;
   }
 }
+
+.nav-link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px; /* Adjust vertical position */
+  left: 0;
+  background: #a78bfa; /* Purple color for the underline */
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link-underline:hover::after {
+  width: 100%;
+}
