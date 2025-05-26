@@ -4,28 +4,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: linear-gradient(
-    -45deg,
-    #0a0a0a,
-    #1a0a1a,
-    #4a0a4a,
-    #1a1a2a,
-    #0a2a2a
-  );
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background-color: #000000; /* To'q fon rangi */
 }
 
 body::before {
@@ -44,6 +23,25 @@ body::before {
     linear-gradient(to bottom, rgba(128, 0, 128, 0.1) 1px, transparent 1px);
   background-size: 40px 40px; /* Adjust grid spacing */
   pointer-events: none; /* Allow clicking through */
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200vmax; /* Katta o'lcham */
+  height: 200vmax; /* Katta o'lcham */
+  background: radial-gradient(
+    circle at center,
+    #0a4a0d 0%,
+    #1a1a2a 30%,
+    #0a2a2a 60%,
+    rgba(0, 0, 0, 0) 70%
+  ); /* Radial gradient */
+  animation: rotate-gradient 30s linear infinite; /* Aylantirish animatsiyasi */
+  z-index: -2; /* Grid ostiga, body ustiga */
+  transform: translate(-50%, -50%); /* Markazga joylash */
 }
 
 .nav-link-underline {
@@ -105,3 +103,12 @@ body::before {
 }
 
 /* Add animation using JavaScript for dynamic text */
+
+@keyframes rotate-gradient {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
