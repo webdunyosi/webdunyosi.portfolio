@@ -99,4 +99,9 @@ body::before {
   animation: typing 2s steps(18, end), blink-caret 0.75s step-end infinite;
 }
 
+#typing-text {
+  border-right: 0.15em solid purple; /* Oddiy miltillovchi kursor */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
 /* Add animation using JavaScript for dynamic text */
