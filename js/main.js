@@ -68,3 +68,53 @@ function erase() {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(type, newSkillDelay) // Initial delay before typing starts
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tabButtons = document.querySelectorAll(".tab-button")
+  const tabContents = document.querySelectorAll(".tab-content")
+
+  tabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const targetTab = button.getAttribute("data-tab")
+
+      tabContents.forEach((content) => {
+        if (content.id === targetTab) {
+          content.classList.remove("hidden")
+        } else {
+          content.classList.add("hidden")
+        }
+      })
+
+      tabButtons.forEach((btn) => {
+        if (btn === button) {
+          btn.classList.add(
+            "bg-purple-600",
+            "text-white",
+            "shadow-xl",
+            "shadow-purple-500/50",
+            "rounded-t-lg"
+          )
+          btn.classList.remove(
+            "text-gray-400",
+            "hover:text-white",
+            "rounded-lg"
+          )
+        } else {
+          btn.classList.remove(
+            "bg-purple-600",
+            "text-white",
+            "shadow-xl",
+            "shadow-purple-500/50",
+            "rounded-t-lg"
+          )
+          btn.classList.add("text-gray-400", "hover:text-white", "rounded-lg")
+        }
+      })
+    })
+  })
+
+  // Set initial active tab
+  if (tabButtons.length > 0) {
+    tabButtons[0].click()
+  }
+})

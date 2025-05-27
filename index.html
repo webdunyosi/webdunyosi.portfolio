@@ -70,7 +70,7 @@
       <!-- Hero Section (New) -->
       <section
         id="hero-new"
-        class=" flex items-center justify-center text-center md:text-left"
+        class="flex items-center justify-center text-center md:text-left"
       >
         <div
           class="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between"
@@ -511,7 +511,436 @@
       </section>
 
       <!-- Projects Section -->
-      <!-- ... existing code ... -->
+      <section id="projects" class="py-10 md:py-14">
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-4xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600 animate-fade-in-up opacity-0"
+            style="animation-delay: 0.2s; animation-fill-mode: forwards"
+          >
+            Portfolio Showcase
+          </h2>
+          <p
+            class="max-w-3xl mx-auto text-center text-gray-400 text-lg leading-relaxed mb-12 animate-fade-in-up opacity-0"
+            style="animation-delay: 0.4s; animation-fill-mode: forwards"
+          >
+            Explore my journey through projects, certifications, and technical
+            expertise. Each section represents a milestone in my continuous
+            learning path.
+          </p>
+
+          <!-- Tabs -->
+          <div
+            class="flex justify-center mb-12 animate-fade-in-up opacity-0"
+            id="portfolio-tabs"
+            style="animation-delay: 0.6s; animation-fill-mode: forwards"
+          >
+            <button
+              class="px-6 py-3 text-lg font-semibold rounded-t-lg bg-purple-600 text-white shadow-xl shadow-purple-500/50 tab-button"
+              data-tab="projects"
+            >
+              Projects
+            </button>
+            <button
+              class="px-6 py-3 text-lg font-semibold text-gray-400 hover:text-white transition-colors duration-300 tab-button"
+              data-tab="certificates"
+            >
+              Certificates
+            </button>
+            <button
+              class="px-6 py-3 text-lg font-semibold text-gray-400 hover:text-white transition-colors duration-300 tab-button"
+              data-tab="techstack"
+            >
+              Tech Stack
+            </button>
+          </div>
+
+          <!-- Projects Grid -->
+          <div
+            id="projects"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 tab-content"
+          >
+            <!-- Project Card 1: IntervueAI -->
+            <div
+              class="bg-gray-800/50 rounded-lg shadow-xl shadow-purple-500/30 overflow-hidden flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-400 animate-fade-in-up opacity-0"
+              style="animation-delay: 0.8s; animation-fill-mode: forwards"
+            >
+              <img
+                src="images/intervueai-screenshot.png"
+                alt="IntervueAI Screenshot"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-2xl font-semibold text-white mb-2">
+                  IntervueAI
+                </h3>
+                <p class="text-gray-400 text-sm mb-4 flex-grow">
+                  Real-time mock interviews with AI, no forms or clicks just
+                  natural, personalized conversations.
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-purple-400 hover:text-purple-300 transition-colors duration-300 flex items-center text-sm"
+                  >
+                    Live Demo
+                    <svg
+                      class="ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center text-sm"
+                  >
+                    Details
+                    <svg
+                      class="ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 2: Blendy -->
+            <div
+              class="bg-gray-800/50 rounded-lg shadow-xl shadow-teal-500/30 overflow-hidden flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-400 animate-fade-in-up opacity-0"
+              style="animation-delay: 1s; animation-fill-mode: forwards"
+            >
+              <img
+                src="images/blendy-screenshot.png"
+                alt="Blendy Screenshot"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-2xl font-semibold text-white mb-2">Blendy</h3>
+                <p class="text-gray-400 text-sm mb-4 flex-grow">
+                  A social app where you can connect in real-time, log in with
+                  one click, share moments, posts instantly.
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-purple-400 hover:text-purple-300 transition-colors duration-300 flex items-center text-sm"
+                  >
+                    Live Demo
+                    <svg
+                      class="ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center text-sm"
+                  >
+                    Details
+                    <svg
+                      class="ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3: WATCHit -->
+            <div
+              class="bg-gray-800/50 rounded-lg shadow-xl shadow-purple-500/30 overflow-hidden flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-400 animate-fade-in-up opacity-0"
+              style="animation-delay: 1.2s; animation-fill-mode: forwards"
+            >
+              <img
+                src="images/watchit-screenshot.png"
+                alt="WATCHit Screenshot"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-2xl font-semibold text-white mb-2">WATCHit</h3>
+                <p class="text-gray-400 text-sm mb-4 flex-grow">
+                  A video streaming app made for easy, personal entertainment
+                  and everything you love to binge.
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-purple-400 hover:text-purple-300 transition-colors duration-300 flex items-center text-sm"
+                  >
+                    Live Demo
+                    <svg
+                      class="ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center text-sm"
+                  >
+                    Details
+                    <svg
+                      class="ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificates Content (Initially hidden) -->
+          <div
+            id="certificates"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 tab-content hidden"
+          >
+            <!-- Certificate Card 1 -->
+            <div
+              class="bg-gray-800/50 rounded-lg shadow-xl shadow-teal-500/30 overflow-hidden flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-400"
+            >
+              <img
+                src="images/certificate1.png"
+                alt="Certificate 1"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+
+            <!-- Certificate Card 2 -->
+            <div
+              class="bg-gray-800/50 rounded-lg shadow-xl shadow-teal-500/30 overflow-hidden flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-400"
+            >
+              <img
+                src="images/certificate2.png"
+                alt="Certificate 2"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+
+            <!-- Certificate Card 3 -->
+            <div
+              class="bg-gray-800/50 rounded-lg shadow-xl shadow-teal-500/30 overflow-hidden flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-400"
+            >
+              <img
+                src="images/certificate3.png"
+                alt="Certificate 3"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- Tech Stack Content (Initially hidden) -->
+          <div id="techstack" class="mb-12 tab-content hidden">
+            <!-- Tech Stack details will go here -->
+            <div class="grid grid-cols-6 gap-6">
+              <!-- HTML Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-purple-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-400"
+              >
+                <img
+                  src="images/html-icon.png"
+                  alt="HTML Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">HTML</p>
+              </div>
+              <!-- CSS Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-teal-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-400"
+              >
+                <img
+                  src="images/css-icon.png"
+                  alt="CSS Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">CSS</p>
+              </div>
+              <!-- JavaScript Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-purple-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-400"
+              >
+                <img
+                  src="images/javascript-icon.png"
+                  alt="JavaScript Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">JavaScript</p>
+              </div>
+              <!-- Tailwind CSS Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-teal-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-400"
+              >
+                <img
+                  src="images/tailwind-icon.png"
+                  alt="Tailwind CSS Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">Tailwind CSS</p>
+              </div>
+              <!-- Express JS Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-purple-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-400"
+              >
+                <img
+                  src="images/express-icon.png"
+                  alt="Express JS Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">Express JS</p>
+              </div>
+              <!-- Node JS Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-teal-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-400"
+              >
+                <img
+                  src="images/node-icon.png"
+                  alt="Node JS Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">Node JS</p>
+              </div>
+              <!-- React + Native Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-purple-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-400"
+              >
+                <img
+                  src="images/react-icon.png"
+                  alt="React + Native Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">
+                  React + Native
+                </p>
+              </div>
+              <!-- MongoDB Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-teal-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-400"
+              >
+                <img
+                  src="images/mongodb-icon.png"
+                  alt="MongoDB Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">MongoDB</p>
+              </div>
+              <!-- JWT Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-purple-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-400"
+              >
+                <img
+                  src="images/jwt-icon.png"
+                  alt="JWT Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">JWT</p>
+              </div>
+              <!-- PostgreSQL Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-teal-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-400"
+              >
+                <img
+                  src="images/postgresql-icon.png"
+                  alt="PostgreSQL Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">PostgreSQL</p>
+              </div>
+              <!-- TypeScript Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-purple-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-400"
+              >
+                <img
+                  src="images/typescript-icon.png"
+                  alt="TypeScript Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">TypeScript</p>
+              </div>
+              <!-- Docker Card -->
+              <div
+                class="bg-gray-800/50 p-4 rounded-lg shadow-xl shadow-teal-500/30 flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-400"
+              >
+                <img
+                  src="images/docker-icon.png"
+                  alt="Docker Icon"
+                  class="w-12 h-12 mb-2"
+                />
+                <p class="text-gray-300 text-sm font-semibold">Docker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="js/main.js"></script>
