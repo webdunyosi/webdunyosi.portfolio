@@ -121,3 +121,49 @@ document.addEventListener("DOMContentLoaded", () => {
     tabButtons[0].click()
   }
 })
+
+// Handle contact form submission
+const contactForm = document.getElementById("contact-form")
+
+contactForm.addEventListener("submit", function (event) {
+  event.preventDefault() // Prevent the default form submission
+
+  const name = document.getElementById("name").value
+  const email = document.getElementById("email").value
+  const message = document.getElementById("message").value
+
+  const botToken = "7768613770:AAFI5eOb3MpVGvc9sFu9G5t8qdvN-EC4IHQ"
+  const chatId = "5414733748"
+
+  const telegramMessage = `
+Yangi xabar:
+Ism: ${name}
+Email: ${email}
+Xabar: ${message}
+  `
+
+  // Send message to Telegram bot
+  fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text: telegramMessage,
+      parse_mode: "HTML",
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Success:", data)
+      // Show a success message to the user
+      alert("Xabaringiz yuborildi!")
+      contactForm.reset() // Clear the form
+    })
+    .catch((error) => {
+      console.error("Error:", error)
+      // Show an error message to the user
+      alert("Xabar yuborishda xatolik yuz berdi.")
+    })
+})
