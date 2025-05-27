@@ -88,26 +88,29 @@ document.addEventListener("DOMContentLoaded", () => {
       tabButtons.forEach((btn) => {
         if (btn === button) {
           btn.classList.add(
-            "bg-purple-600",
-            "text-white",
-            "shadow-xl",
-            "shadow-purple-500/50",
-            "rounded-t-lg"
+            "bg-purple-600/20",
+            "backdrop-blur-md",
+            "text-white"
           )
           btn.classList.remove(
             "text-gray-400",
             "hover:text-white",
-            "rounded-lg"
+            "backdrop-blur-md",
+            "bg-transparent"
           )
+          // Set icon color for active tab
+          btn.querySelector("svg").classList.remove("text-gray-400")
+          btn.querySelector("svg").classList.add("text-white")
         } else {
-          btn.classList.remove(
-            "bg-purple-600",
-            "text-white",
-            "shadow-xl",
-            "shadow-purple-500/50",
-            "rounded-t-lg"
+          btn.classList.remove("bg-purple-600", "text-white")
+          btn.classList.add(
+            "text-gray-400",
+            "hover:text-white",
+            "bg-transparent"
           )
-          btn.classList.add("text-gray-400", "hover:text-white", "rounded-lg")
+          // Set icon color for inactive tabs
+          btn.querySelector("svg").classList.remove("text-white")
+          btn.querySelector("svg").classList.add("text-gray-400")
         }
       })
     })
