@@ -76,7 +76,7 @@ body::after {
   margin-top: 5px; /* Adjust vertical position */
   left: 0;
   background: #8bfa8b; /* Purple color for the underline */
-  transition: width 0.3s ease-in-out;
+  transition: width 0.6s ease-in-out;
 }
 
 .nav-link-underline:hover::after {
@@ -162,4 +162,40 @@ body::after {
 
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out;
+}
+
+.animated-lime-gradient-button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    #a3e635,
+    #65a30d,
+    #a3e635
+  ); /* Lime shades */
+  background-size: 200% auto;
+  transition: background-position 0.5s ease-out;
+}
+
+.animated-lime-gradient-button:hover {
+  background-position: right center; /* Move the gradient on hover */
+}
+
+.animated-lime-gradient-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    rgba(163, 230, 53, 0.2) 10%,
+    transparent 30%,
+    transparent 100%
+  );
+  animation: rotate-gradient 4s linear infinite;
+  z-index: -1; /* Behind the button content */
 }

@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       tabButtons.forEach((btn) => {
         if (btn === button) {
-          btn.classList.add("bg-lime-600/20", "backdrop-blur-md", "text-white")
+          btn.classList.add("bg-lime-800/20", "backdrop-blur-md", "text-white")
           btn.classList.remove(
             "text-gray-400",
             "hover:text-white",
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
           btn.querySelector("svg").classList.remove("text-gray-400")
           btn.querySelector("svg").classList.add("text-white")
         } else {
-          btn.classList.remove("bg-lime-600", "text-white")
+          btn.classList.remove("bg-lime-800", "text-white")
           btn.classList.add(
             "text-gray-400",
             "hover:text-white",
