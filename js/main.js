@@ -87,18 +87,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       tabButtons.forEach((btn) => {
         if (btn === button) {
-          btn.classList.add("bg-lime-800/20", "backdrop-blur-md", "text-white")
+          btn.classList.add("active-tab-button")
           btn.classList.remove(
             "text-gray-400",
             "hover:text-white",
-            "backdrop-blur-md",
             "bg-transparent"
           )
           // Set icon color for active tab
           btn.querySelector("svg").classList.remove("text-gray-400")
           btn.querySelector("svg").classList.add("text-white")
         } else {
-          btn.classList.remove("bg-lime-800", "text-white")
+          btn.classList.remove("active-tab-button")
           btn.classList.add(
             "text-gray-400",
             "hover:text-white",

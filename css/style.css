@@ -196,6 +196,22 @@ body::after {
     transparent 30%,
     transparent 100%
   );
-  animation: rotate-gradient 4s linear infinite;
+  animation: rotate-gradient 8s linear infinite;
   z-index: -1; /* Behind the button content */
+}
+
+.active-tab-button {
+  background: linear-gradient(
+    to right,
+    #a3e635,
+    #65a30d,
+    #a3e635
+  ); /* Lime gradient */
+  background-size: 200% auto;
+  transition: background-position 1s ease-out;
+  color: #ffffff; /* White text for active tab */
+}
+
+.active-tab-button:hover {
+  background-position: right center; /* Move the gradient on hover */
 }
