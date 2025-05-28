@@ -75,7 +75,7 @@ body::after {
   display: block;
   margin-top: 5px; /* Adjust vertical position */
   left: 0;
-  background: #a78bfa; /* Purple color for the underline */
+  background: #8bfa8b; /* Purple color for the underline */
   transition: width 0.3s ease-in-out;
 }
 
@@ -98,7 +98,7 @@ body::after {
     border-color: transparent;
   }
   50% {
-    border-color: purple;
+    border-color: lime;
   }
 }
 
