@@ -133,7 +133,7 @@ contactForm.addEventListener("submit", function (event) {
   const message = document.getElementById("message").value
 
   const botToken = "7768613770:AAFI5eOb3MpVGvc9sFu9G5t8qdvN-EC4IHQ"
-  const chatId = "5414733748"
+  const chatId = "-1002607241253"
 
   const telegramMessage = `
 Yangi xabar:
